@@ -57,7 +57,7 @@ Um dos maiores marcos do projeto foi o processo de transição do ambiente de de
 2. **Instalação de Infraestrutura:** Utilização do utilitário **NSSM** para registrar o arquivo `.jar` diretamente no núcleo de serviços do sistema operacional Windows:
 3. **Resiliência e Automação: O serviço foi configurado no modo Automático. Caso o servidor/computador do cliente seja reiniciado, o Windows inicializa a API Spring Boot em background automaticamente antes mesmo do login do usuário, garantindo alta disponibilidade (High Availability).
 
-### **Lições Aprendidas**
+### **Lições Aprendidas.**
 - Ciclo de Manutenção: Compreensão prática do bloqueio de arquivos do Windows em tempo de execução. Para aplicar atualizações (bugfixes ou novas features), o serviço deve ser temporariamente pausado no services.msc para liberar a substituição do arquivo .jar.
 
 - Interoperabilidade: A API Java se conectou e manipulou com sucesso o mesmo banco de dados MySQL que antes era alimentado por uma aplicação Node.js, provando o poder e a universalidade do padrão RESTful.
